@@ -12,10 +12,20 @@ while i < num1:
     list1.append(num2)
     i += 1
 
+#while list1[-1] > num1:
+#    list1 = list1[:(list1) - 1] #remove last n elements from list
+
 while list1[-1] > num1:
-    list1 = list1[:len(list1) - 1] #remove last n elements from list
+   del list1[-1] #remove last n elements from list
+
+#while list1[-1] > num1:
+#    list1 = list1[:-1] #remove last n elements from list
+
+#for i in range(0, len(list1)):
+#       if list1[i] > num1: #trying to remove elements from list
+#           list1.pop(i)
+
 else:
-    for b in range(num1):
-        print(list1[b], end=",")
+    print(list1, end=", ")
 
 
